@@ -11,10 +11,25 @@
 .main-title{
     font-size: clamp(1.8rem, 10vw , 4rem);
 }
-.main-popup1{
+#main-popup1{
     border: 2px dashed black;
-    height: 30px;
-    width: 50px;
+    width: 90%;
+    margin: 0 auto ;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+}
+.popup{
+    border: 2px dashed black;
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+}
+.cardtitle{
+    font-size: clamp(16px, 5vw, 37px);
 }
 nav ul{
     width: 100%;
@@ -79,4 +94,12 @@ nav a:hover{
     #side_nav ul{
         width: 100%;
     }
+}
+@media(max-width: 500px){
+    #main-popup1 {
+        height: 1250px;
+    }
+    .popup{
+
+    }    
 }
