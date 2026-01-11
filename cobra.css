@@ -11,6 +11,11 @@
 .main-title{
     font-size: clamp(1.8rem, 10vw , 4rem);
 }
+.main-popup1{
+    border: 2px dashed black;
+    height: 30px;
+    width: 50px;
+}
 nav ul{
     width: 100%;
     list-style: none;
@@ -34,7 +39,6 @@ nav a:hover{
 }
 #climate-img{
     height: 90px;
-
 }
 #main-nav li:first-child{
     margin-right: auto;
@@ -76,4 +80,3 @@ nav a:hover{
         width: 100%;
     }
 }
-    
