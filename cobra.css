@@ -184,3 +184,28 @@ nav a:hover{
         }
     }
 }
+@media(max-width: 757px) {
+
+    #card1{
+        animation: big-up 1.5s ease-in-out;
+    }
+
+    #card-title1{
+        animation: big-up 1.5s ease-in-out;
+    }
+
+    .main-title {
+        animation: big-up 1.0s ease-in-out;
+    }
+
+    @keyframes big-up {
+        0% {
+            transform: translateY(20px);
+            opacity: 0.3;
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+}
