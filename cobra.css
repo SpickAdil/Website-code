@@ -3,11 +3,14 @@
     padding: 0px;
 }
 body{
-    min-height: 100dvh;
+    min-height: 100%;
     background-image: url(code/Images/d65b19b3-2a72-4c19-b5ee-a63ecb895c29.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
 }
 #main-nav{
     background-color: rgba(63, 126, 68);
