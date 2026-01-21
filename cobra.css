@@ -2,22 +2,19 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    min-height: 100%;
+#hero{
+    height: 100vh;
     background-image: url(code/Images/d65b19b3-2a72-4c19-b5ee-a63ecb895c29.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
 }
 #main-nav{
-    background-color: rgba(63, 126, 68);
+    background-color: transparent;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     display: flex;
-    opacity: ;
+    position: fixed;
 }
 .main-title{
     font-size: clamp(1.8rem, 10vw , 4rem);
@@ -98,7 +95,7 @@ nav a{
     color: white;
 }
 nav a:hover{
-    background-color: rgb(9, 109, 9);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 #climate-img{
     height: 90px;
@@ -116,9 +113,9 @@ nav a:hover{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(63, 126, 68);
+    background-color: transparent;
     backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -129,6 +126,19 @@ nav a:hover{
 }
 #side_nav a{
     width: 100%;
+}
+#main-nav{
+    animation: colorchangestart;
+    animation-timeline: view();
+}
+/*Keyframes*/
+@keyframes colorchangestart{
+    0%{
+        background-color: transparent;
+    }
+    95%{
+        background-color: aqua;
+    }
 }
 @media(max-width: 850px){
     .hideonMobile{
