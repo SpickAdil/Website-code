@@ -131,7 +131,7 @@ nav a:hover{
     animation: colorchangestart;
     animation-timeline: view();
 }
-/*Keyframes*/
+/*Keyframes
 @keyframes colorchangestart{
     0%{
         background-color: transparent;
@@ -139,7 +139,7 @@ nav a:hover{
     95%{
         background-color: aqua;
     }
-}
+}*/
 @media(max-width: 850px){
     .hideonMobile{
         display: none;
