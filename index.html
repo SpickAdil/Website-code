@@ -115,18 +115,18 @@
 
 
         const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        console.log(entry.target);
-                        entry.target.classList.add("show");
-                    } else {
-                        entry.target.classList.remove("show");
-                    }
-                });
-            }, {});
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    console.log(entry.target);
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        }, {});
 
-            const todoElements = document.querySelectorAll(".todo");
-            todoElements.forEach(el => observer.observe(el));
+        const cardtitleElements = document.querySelectorAll(".cardtitle");
+        cardtitleElements.forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
