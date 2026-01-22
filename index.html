@@ -89,6 +89,7 @@
 
 
     <script>
+
         function showSidebar(e){
             e.preventDefault();
             document.querySelector("#side_nav ul").style.display = 'flex';
@@ -97,6 +98,35 @@
                 e.preventDefault();
                 document.querySelector("#side_nav ul").style.display = 'none';
         }
+
+
+
+        const navbar =  document.getElementById("main-nav");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled")
+            }
+        })
+
+
+
+
+        const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        console.log(entry.target);
+                        entry.target.classList.add("show");
+                    } else {
+                        entry.target.classList.remove("show");
+                    }
+                });
+            }, {});
+
+            const todoElements = document.querySelectorAll(".todo");
+            todoElements.forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
