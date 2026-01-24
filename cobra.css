@@ -11,6 +11,18 @@ html , body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+.maintitle-box{
+    display: flex;
+}
+#title_13{
+    color: green;
+    font-size: clamp(2.8rem, 12vw, 6rem);
 }
 #main-nav{
     font-size: 16px;
@@ -31,10 +43,7 @@ html , body {
 }
 .main-title{
     font-size: clamp(1.8rem, 10vw , 4rem);
-    position: relative;
-    top: 50%;
-    left: 50%;
-
+    color: white;
 }
 #main-popup1{
     width: 95%;
