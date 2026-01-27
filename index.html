@@ -6,6 +6,10 @@
     <title>Climate action</title>
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
     <link rel="stylesheet" href="cobra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="hero">
@@ -42,14 +46,26 @@
         </ul>
     </nav>
     <div class="maintitle-box">
-        <h1 class="main-title">Climate <br> action</h1>   
-        <h1 id="title_13">13</h1>
-          
+           
+        <h1 id="title_13"><b>13</b></h1>
+        <h1 class="main-title">Climate <br> action</h1>  
     </div>
     
-</div>   
-    
-
+</div>
+<br><br><br><br><br><br>
+<div class="main-box-text1">
+    <h1 class="box-title">Understanding climate change and why taking action matters.</h1>
+    <div class="text-box1">
+        <p>
+        Climate change is one of the biggest challenges facing our planet today. It refers to long-term changes in Earth’s
+        temperature and weather patterns. Human activities such as burning fossil fuels, cutting down forests, and producing
+        waste have increased greenhouse gases in the atmosphere, causing the planet to warm. Climate action is important because
+        the choices we make today will affect the future of people, animals, and ecosystems around the world.    
+        </p>
+        
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br>
     <div id="main-popup1">
         <div class="popup">
             <center><h1 id="card-title1"  class="cardtitle">What is Climate Change?</h1></center>
@@ -131,6 +147,13 @@
 
         const cardtitleElements = document.querySelectorAll(".cardtitle");
         cardtitleElements.forEach(el => observer.observe(el));
+
+        const cardtitleElements2 = document.querySelectorAll(".card");cardtitleElements2.forEach(el => observer.observe(el));
+
+        const boxtitle = document.querySelectorAll(".box-title");boxtitle.forEach(el => observer.observe(el));
+
+        const textbox = document.querySelectorAll(".text-box1");
+        textbox.forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
