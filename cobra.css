@@ -41,12 +41,12 @@ html, body {
     width: 50%;
     padding: 10px 2px 2px 30px;
     opacity: 0;
-    transform: translatey(20px);
+    transform: translateY(20px);
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
 .box-title.show{
     opacity: 1;
-    transform: translatey(0)
+    transform: translateY(0)
 }
 .text-box1{
     width: 50%;
@@ -56,7 +56,7 @@ html, body {
 }
 .text-box1.show{
     opacity: 1;
-    transform: translateX(0)
+    transform: translateX(0);
 }
 .text-box1 p {
     font-size: 21px;
@@ -74,8 +74,8 @@ html, body {
     font-size: 16px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
-    display: flex;
-    position: fixed;
+        display: flex;
+        position: fixed;
     top: 0;
 
     background-color: rgba(0, 128, 0, 0);
@@ -216,6 +216,86 @@ nav a:hover{
 #main-nav{
     animation: colorchangestart;
     animation-timeline: view();
+}
+#learnMoreTitle{
+    margin-left: 30px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+#learnMoreTitle.show{
+    opacity: 1;
+    transform: translateX(0)
+}
+#learnMoreButton {
+    margin-left: 50px;
+    height: 60px;
+    width: 160px;
+
+    border: 3px solid rgba(63, 126, 68);
+    background-color: white;
+
+    padding: 0;
+}
+
+#learnMoreButton a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: black;
+    font-family: "Anton", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+
+    transition: 300ms ease;
+}
+#learnMoreButton:hover {
+    background-color: black;
+    border: 3px solid black;
+}
+
+#learnMoreButton:hover a {
+    color: white;
+}
+
+#ContinueButton {
+    margin-left: 50px;
+    height: 60px;
+    width: 160px;
+
+    background-color: white;
+    border: 3px solid rgba(63, 126, 68);
+
+    padding: 0;
+    cursor: pointer;
+}
+
+#ContinueButton a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: black;
+    font-family: "Anton", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+
+    transition: 300ms ease;
+}
+#ContinueButton:hover {
+    background-color: black;
+    border: 3px solid black;
+}
+
+#ContinueButton:hover a {
+    color: white;
 }
 /*Media*/
 @media(max-width: 850px){
