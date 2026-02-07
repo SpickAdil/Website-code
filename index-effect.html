@@ -105,6 +105,11 @@
 
             const titleElements = document.querySelectorAll("#title");
             titleElements.forEach(el => observer.observe(el));
+
+            const subtitleElements = document.querySelectorAll(".sub-title");
+            subtitleElements.forEach(el => observer.observe(el));
+            const textboxElements = document.querySelectorAll(".text-box");
+                textboxElements.forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
