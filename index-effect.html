@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effects page</title>
     <link rel="stylesheet" href="cobra-effect.css">
-    <link rel="stylesheet" href="cobra.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -32,7 +31,7 @@
             <img id="climate-img" src="code/Images/download.png" alt="">
         </li>
 
-        <li class="hideonMobile" id="Home"><a href="#">Home</a></li>
+        <li class="hideonMobile" id="Home"><a href="index.html">Home</a></li>
         <li class="hideonMobile" id="Effects"><a href="">Effects</a></li>
         <li class="hideonMobile" id="Problems"><a href="">Problems</a></li>
         <li class="hideonMobile" id="Solutions"><a href="">Solutions</a></li>
@@ -43,12 +42,44 @@
         <path d="M120-240v-80h720v80H120zm0-200v-80h720v80H120zm0-200v-80h720v80H120z" />
     </svg></a></li>
     </ul>
-</nav>
+</nav><br><br><br>
+
     <div id="title-box">
-
+        <h1 id="title">Effects of climate change</h1>
+        <div id="text-box1">
+            <p>Here you can find information on the effects of climate change. </p>
+            <br>
+            <center>
+            <button id="findOut-button" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
+            </svg>Find out more</button>
+        </div>
     </div>
-    <h1 id="title">Effects</h1>
-
+    <div class="info-box">
+        <h1 class="sub-title">Burning Fossil Fuels</h1>
+        <p class="text-box">Burning fossil fuels such as coal, oil, and gas for cars, factories, and electricity releases large amounts of carbon
+        dioxide into the air. Carbon dioxide is a greenhouse gas that traps heat in the atmosphere and makes the Earth warmer.
+        The more fossil fuels we burn, the faster global warming increases.</p>
+    </div>
+    <div class="info-box">
+        <h1 class="sub-title">Deforestation</h1>
+        <p class="text-box">Deforestation means cutting down large numbers of trees and forests. Trees normally absorb carbon dioxide, so when they
+        are removed, more carbon stays in the atmosphere. This not only increases global warming but also destroys habitats for
+        animals and reduces biodiversity.</p>
+    </div>
+    <div class="info-box">
+        <h1 class="sub-title">Plastic Waste</h1>
+        <p class="text-box">Plastic is made from fossil fuels and takes hundreds of years to break down. When plastic is burned or left in
+        landfills, it releases harmful gases and chemicals into the environment. Plastic pollution also damages oceans, harms
+        wildlife, and contributes indirectly to climate change.</p>
+    </div>
+    <div class="info-box">
+        <h1 class="sub-title">Energy Overuse</h1>
+        <p class="text-box">Using too much electricity, especially from non-renewable sources, increases greenhouse gas emissions. Leaving lights
+        on, wasting water, and overusing air conditioning all add extra pressure on power plants. Saving energy helps reduce
+        pollution and slows climate change.</p>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
     <script>
@@ -60,6 +91,20 @@
                 e.preventDefault();
                 document.querySelector("#side_nav ul").style.display = 'none';
             }
+
+        const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        console.log(entry.target);
+                        entry.target.classList.add("show");
+                    } else {
+                        entry.target.classList.remove("show");
+                    }
+                });
+            }, {});
+
+            const titleElements = document.querySelectorAll("#title");
+            titleElements.forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
