@@ -17,6 +17,9 @@ body {
 *::after {
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 html,
 body {
     overflow-x: hidden;
@@ -70,7 +73,6 @@ nav ul {
 nav li {
     height: 90px;
 }
-
 nav a {
     height: 100%;
     padding: 0 30px;
@@ -158,6 +160,11 @@ nav a:hover {
 .text-box.show{
     opacity: 1;
     transform: translateX(0);
+}
+button a{
+    height: 100%;
+    padding: 0cap;
+    color: rgba(63, 126, 68);
 }
 /*Media*/
 @media(max-width: 850px) {
