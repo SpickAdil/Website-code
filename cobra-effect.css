@@ -89,6 +89,7 @@ body {
     top: 0;
     background-color: rgba(63, 126, 68);
     z-index: 998;
+    scroll-margin-top: 90px;
 }
 nav ul {
     width: 100%;
