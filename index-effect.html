@@ -46,7 +46,7 @@
     <div id="title-box">
         <h1 id="title">Causes of climate change</h1>
         <div id="text-box1">
-            <p>Here you can find information on the causes of climate change. </p>
+            <p>Here you can find information on the Causes of climate change. </p>
             <br>
             <center>
             <button id="findOut-button" type="button"><a href="#causes"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -86,6 +86,48 @@
         on, wasting water, and overusing air conditioning all add extra pressure on power plants. Saving energy helps reduce
         pollution and slows climate change.</p>
     </div>
+    <div id="title2-box">
+        <h1 id="title2">Effects of climate change</h1>
+        <div id="text-box2">
+            <p>Here you can find information on the Effects of climate change. </p>
+            <br>
+            <center>
+            <button id="findOut-button" type="button"><a href="#causes"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+            </svg>Causes</a></button>
+
+            <button id="findOut-button"
+            type="button"><a href="#effects"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/>
+            </svg>Effects</a></button></center>
+        </div>
+    </div>
+    <br><br id="effects"><br><br><br>
+    <div class="info-box">
+        <h1 class="sub-title">Rising Temperatures</h1>
+        <p class="text-box">The Earth’s average temperature is increasing every year. Hotter temperatures lead to heatwaves, dry land, and melting
+        ice caps. This makes some places uncomfortable or even unsafe to live in.</p>
+    </div>
+    <div class="info-box">
+        <h1 class="sub-title">Extreme Weather</h1>
+        <p class="text-box">Climate change causes stronger and more frequent natural disasters such as floods, hurricanes, droughts, and wildfires.
+        These events destroy homes, farms, and cities, and can put many lives in danger.</p>
+    </div>
+    <div class="info-box">
+        <h1 class="sub-title">Melting Ice & Rising Sea Levels</h1>
+        <p class="text-box">Glaciers and polar ice are melting because of higher temperatures. This causes sea levels to rise, which can flood
+        coastal areas and small islands. Many communities near oceans are at risk</p>
+    </div>
+    <div class="info-box">
+        <h1 class="sub-title">Harm to Animals and Plants</h1>
+        <p class="text-box">Many animals lose their natural habitats due to changing temperatures and weather patterns. Some species cannot adapt
+        fast enough and may become endangered or extinct. Ecosystems become unbalanced.</p>
+    </div>
+    <div class="info-box">
+        <h1 class="sub-title">Impact on Humans</h1>
+        <p class="text-box">Climate change affects food supply, clean water, and human health. People may suffer from heat illnesses, hunger, and
+        lack of safe drinking water, especially in hotter regions of the world.</p>
+    </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
@@ -117,6 +159,8 @@
             subtitleElements.forEach(el => observer.observe(el));
             const textboxElements = document.querySelectorAll(".text-box");
                 textboxElements.forEach(el => observer.observe(el));
+            const title2Elements = document.querySelectorAll("#title2");
+                title2Elements.forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
