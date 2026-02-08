@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions page</title>
+    <link rel="stylesheet" href="cobra-solution.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="side_nav">
+        <ul>
+            <li><a onclick="hideSidebar()" href=""><svg xmlns="http://www.w3.org/2000/svg" height="34"
+                        viewBox="0 -960 960 960" width="24" fill="#e3e3e3">
+                        <path
+                            d="M256-200l-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224z" />
+                    </svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index-effect.html">Causes & Effects</a></li>
+            <li><a href="index-solution.html">Solutions</a></li>
+            <li><a href="">Quiz</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+    <nav id="main-nav">
+        <ul>
+            <li>
+                <img id="climate-img" src="code/Images/download.png" alt="">
+            </li>
+    
+            <li class="hideonMobile"><a href="index.html">Home</a></li>
+            <li class="hideonMobile"><a href="index-effect.html">Causes & Effects</a></li>
+            <li class="hideonMobile"><a href="">Solutions</a></li>
+            <li class="hideonMobile"><a href="">Quiz</a></li>
+            <li class="hideonMobile"><a href="index-about.html">About</a></li>
+    
+            <li class="menu_button"><a onclick="showSidebar(event)" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24" viewBox="0 -960 960 960" width="24" fill="#e3e3e3">
+                        <path d="M120-240v-80h720v80H120zm0-200v-80h720v80H120zm0-200v-80h720v80H120z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br>
+    <div id="title-box">
+        <h1 id="title">Solutions to Combat Climate Change</h1>
+        <div id="text-box1">
+            <p>Here you can find information on how we can combat climate change. </p>
+            <br>
+            <center>
+                <button id="findOut-button"
+                type="button"><a href="#solutions"><svg xmlns="http://www.w3.org/2000/svg"height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                    <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
+                </svg>Solutions</a></button>
+            </center>
+        </div>
+    </div>
+    <br><br id="solutions" style="scroll-margin-right: 90px;"><br><br><br>
+    <div class="info-box">
+        <h1 class="sub-title">What Governments Can Do</h1>
+        <p class="text-box">Governments can invest in renewable energy such as solar and wind power instead of fossil fuels. They can also create
+        laws and policies to reduce pollution, protect forests, and encourage public transportation. Large-scale decisions made
+        by governments can reduce emissions for entire countries.</p>
+    </div>
+    <div class="info-box">
+        <h1 class="sub-title">What the World (Countries & Companies) Can Do</h1>
+        <p class="text-box">Countries and big companies can work together to limit global carbon emissions and develop cleaner technologies.
+        International cooperation, climate agreements, and eco-friendly industries help create long-term global change and
+        protect the planet for future generations.</p>
+    </div>
+    <div class="main-points">
+        <div class="half-points">
+            <div class="point-box">
+                <svg class="icon" viewBox="0 0 64 64" width="64" height="64">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="#3E7E45" cx="32" cy="32" r="32"></circle>
+                        <g fill="#fff">
+                            <path
+                                d="M31.75 41.16h-4.3v-1c-.03-2.32-.62-3.68-2.3-6.08l-.27-.4c-1.7-2.44-2.38-3.98-2.38-6.43 0-5.1 4.14-9.25 9.25-9.25 5.12 0 9.28 4.15 9.25 9.26-.02 2.5-.68 4-2.4 6.42-.04.08-.12.2-.26.4-1.66 2.32-2.25 3.7-2.3 6.1v.98h-4.3zm0-2h2.35c.2-2.33.96-3.93 2.6-6.25l.28-.35c1.5-2.1 2-3.3 2.02-5.3.03-3.98-3.24-7.23-7.25-7.23-4 0-7.25 3.26-7.25 7.26 0 1.95.52 3.15 2.02 5.3l.27.4c1.63 2.35 2.4 3.95 2.6 6.2h2.33z"
+                                fill-rule="nonzero"></path>
+                            <path d="M27.43 42.57h8.68v1.14h-8.65zm1.7 2.3h5.3V46h-5.3"></path>
+                        </g>
+                    </g>
+                </svg>
+                <p class="text-box">Turn off lights, fans, and devices when not in use. Using less electricity reduces pollution from power plants.</p>
+            </div>
+            <div class="point-box">
+                <svg class="icon" viewBox="0 0 64 64" width="64" height="64">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="#3E7E45" cx="32" cy="32" r="32"></circle>
+                        <g fill="#fff">
+                            <path
+                                d="M31.75 41.16h-4.3v-1c-.03-2.32-.62-3.68-2.3-6.08l-.27-.4c-1.7-2.44-2.38-3.98-2.38-6.43 0-5.1 4.14-9.25 9.25-9.25 5.12 0 9.28 4.15 9.25 9.26-.02 2.5-.68 4-2.4 6.42-.04.08-.12.2-.26.4-1.66 2.32-2.25 3.7-2.3 6.1v.98h-4.3zm0-2h2.35c.2-2.33.96-3.93 2.6-6.25l.28-.35c1.5-2.1 2-3.3 2.02-5.3.03-3.98-3.24-7.23-7.25-7.23-4 0-7.25 3.26-7.25 7.26 0 1.95.52 3.15 2.02 5.3l.27.4c1.63 2.35 2.4 3.95 2.6 6.2h2.33z"
+                                fill-rule="nonzero"></path>
+                            <path d="M27.43 42.57h8.68v1.14h-8.65zm1.7 2.3h5.3V46h-5.3"></path>
+                        </g>
+                    </g>
+                </svg>
+                <p class="text-box">Carry reusable bottles, bags, and containers instead of single-use plastic. This lowers waste and pollution.</p>
+            </div>
+            <div class="point-box">
+                <svg class="icon" viewBox="0 0 64 64" width="64" height="64">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="#3E7E45" cx="32" cy="32" r="32"></circle>
+                        <g fill="#fff">
+                            <path
+                                d="M31.75 41.16h-4.3v-1c-.03-2.32-.62-3.68-2.3-6.08l-.27-.4c-1.7-2.44-2.38-3.98-2.38-6.43 0-5.1 4.14-9.25 9.25-9.25 5.12 0 9.28 4.15 9.25 9.26-.02 2.5-.68 4-2.4 6.42-.04.08-.12.2-.26.4-1.66 2.32-2.25 3.7-2.3 6.1v.98h-4.3zm0-2h2.35c.2-2.33.96-3.93 2.6-6.25l.28-.35c1.5-2.1 2-3.3 2.02-5.3.03-3.98-3.24-7.23-7.25-7.23-4 0-7.25 3.26-7.25 7.26 0 1.95.52 3.15 2.02 5.3l.27.4c1.63 2.35 2.4 3.95 2.6 6.2h2.33z"
+                                fill-rule="nonzero"></path>
+                            <path d="M27.43 42.57h8.68v1.14h-8.65zm1.7 2.3h5.3V46h-5.3"></path>
+                        </g>
+                    </g>
+                </svg>
+                <p class="text-box">Walking, cycling, or using buses reduces the number of cars on the road and lowers carbon emissions.</p>
+            </div>
+            <div class="point-box">
+                <svg class="icon" viewBox="0 0 64 64" width="64" height="64">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="#3E7E45" cx="32" cy="32" r="32"></circle>
+                        <g fill="#fff">
+                            <path
+                                d="M31.75 41.16h-4.3v-1c-.03-2.32-.62-3.68-2.3-6.08l-.27-.4c-1.7-2.44-2.38-3.98-2.38-6.43 0-5.1 4.14-9.25 9.25-9.25 5.12 0 9.28 4.15 9.25 9.26-.02 2.5-.68 4-2.4 6.42-.04.08-.12.2-.26.4-1.66 2.32-2.25 3.7-2.3 6.1v.98h-4.3zm0-2h2.35c.2-2.33.96-3.93 2.6-6.25l.28-.35c1.5-2.1 2-3.3 2.02-5.3.03-3.98-3.24-7.23-7.25-7.23-4 0-7.25 3.26-7.25 7.26 0 1.95.52 3.15 2.02 5.3l.27.4c1.63 2.35 2.4 3.95 2.6 6.2h2.33z"
+                                fill-rule="nonzero"></path>
+                            <path d="M27.43 42.57h8.68v1.14h-8.65zm1.7 2.3h5.3V46h-5.3"></path>
+                        </g>
+                    </g>
+                </svg>
+                <p class="text-box">Trees absorb carbon dioxide and provide oxygen. Planting even one tree helps the environment.</p>
+            </div>
+        </div>
+        <div class="half-points">
+            <div class="point-box">
+                <svg class="icon" viewBox="0 0 64 64" width="64" height="64">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="#3E7E45" cx="32" cy="32" r="32"></circle>
+                        <g fill="#fff">
+                            <path
+                                d="M31.75 41.16h-4.3v-1c-.03-2.32-.62-3.68-2.3-6.08l-.27-.4c-1.7-2.44-2.38-3.98-2.38-6.43 0-5.1 4.14-9.25 9.25-9.25 5.12 0 9.28 4.15 9.25 9.26-.02 2.5-.68 4-2.4 6.42-.04.08-.12.2-.26.4-1.66 2.32-2.25 3.7-2.3 6.1v.98h-4.3zm0-2h2.35c.2-2.33.96-3.93 2.6-6.25l.28-.35c1.5-2.1 2-3.3 2.02-5.3.03-3.98-3.24-7.23-7.25-7.23-4 0-7.25 3.26-7.25 7.26 0 1.95.52 3.15 2.02 5.3l.27.4c1.63 2.35 2.4 3.95 2.6 6.2h2.33z"
+                                fill-rule="nonzero"></path>
+                            <path d="M27.43 42.57h8.68v1.14h-8.65zm1.7 2.3h5.3V46h-5.3"></path>
+                        </g>
+                    </g>
+                </svg>
+                <p class="text-box">Do not waste water while brushing or washing. Saving water also saves the energy used to pump and treat it.</p>
+            </div>
+            <div class="point-box">
+                <svg class="icon" viewBox="0 0 64 64" width="64" height="64">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="#3E7E45" cx="32" cy="32" r="32"></circle>
+                        <g fill="#fff">
+                            <path
+                                d="M31.75 41.16h-4.3v-1c-.03-2.32-.62-3.68-2.3-6.08l-.27-.4c-1.7-2.44-2.38-3.98-2.38-6.43 0-5.1 4.14-9.25 9.25-9.25 5.12 0 9.28 4.15 9.25 9.26-.02 2.5-.68 4-2.4 6.42-.04.08-.12.2-.26.4-1.66 2.32-2.25 3.7-2.3 6.1v.98h-4.3zm0-2h2.35c.2-2.33.96-3.93 2.6-6.25l.28-.35c1.5-2.1 2-3.3 2.02-5.3.03-3.98-3.24-7.23-7.25-7.23-4 0-7.25 3.26-7.25 7.26 0 1.95.52 3.15 2.02 5.3l.27.4c1.63 2.35 2.4 3.95 2.6 6.2h2.33z"
+                                fill-rule="nonzero"></path>
+                            <path d="M27.43 42.57h8.68v1.14h-8.65zm1.7 2.3h5.3V46h-5.3"></path>
+                        </g>
+                    </g>
+                </svg>
+                <p class="text-box">Separate waste into recycling bins and reuse materials when possible. This reduces landfill waste and saves resources.</p>
+            </div>
+            <div class="point-box">
+                <svg class="icon" viewBox="0 0 64 64" width="64" height="64">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="#3E7E45" cx="32" cy="32" r="32"></circle>
+                        <g fill="#fff">
+                            <path
+                                d="M31.75 41.16h-4.3v-1c-.03-2.32-.62-3.68-2.3-6.08l-.27-.4c-1.7-2.44-2.38-3.98-2.38-6.43 0-5.1 4.14-9.25 9.25-9.25 5.12 0 9.28 4.15 9.25 9.26-.02 2.5-.68 4-2.4 6.42-.04.08-.12.2-.26.4-1.66 2.32-2.25 3.7-2.3 6.1v.98h-4.3zm0-2h2.35c.2-2.33.96-3.93 2.6-6.25l.28-.35c1.5-2.1 2-3.3 2.02-5.3.03-3.98-3.24-7.23-7.25-7.23-4 0-7.25 3.26-7.25 7.26 0 1.95.52 3.15 2.02 5.3l.27.4c1.63 2.35 2.4 3.95 2.6 6.2h2.33z"
+                                fill-rule="nonzero"></path>
+                            <path d="M27.43 42.57h8.68v1.14h-8.65zm1.7 2.3h5.3V46h-5.3"></path>
+                        </g>
+                    </g>
+                </svg>
+                <p class="text-box">Talk to friends and family about climate change and encourage eco-friendly habits. Awareness creates larger community
+                impact.</p>
+            </div>
+            <div class="point-box">
+                <svg class="icon" viewBox="0 0 64 64" width="64" height="64">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="#3E7E45" cx="32" cy="32" r="32"></circle>
+                        <g fill="#fff">
+                            <path
+                                d="M31.75 41.16h-4.3v-1c-.03-2.32-.62-3.68-2.3-6.08l-.27-.4c-1.7-2.44-2.38-3.98-2.38-6.43 0-5.1 4.14-9.25 9.25-9.25 5.12 0 9.28 4.15 9.25 9.26-.02 2.5-.68 4-2.4 6.42-.04.08-.12.2-.26.4-1.66 2.32-2.25 3.7-2.3 6.1v.98h-4.3zm0-2h2.35c.2-2.33.96-3.93 2.6-6.25l.28-.35c1.5-2.1 2-3.3 2.02-5.3.03-3.98-3.24-7.23-7.25-7.23-4 0-7.25 3.26-7.25 7.26 0 1.95.52 3.15 2.02 5.3l.27.4c1.63 2.35 2.4 3.95 2.6 6.2h2.33z"
+                                fill-rule="nonzero"></path>
+                            <path d="M27.43 42.57h8.68v1.14h-8.65zm1.7 2.3h5.3V46h-5.3"></path>
+                        </g>
+                    </g>
+                </svg>
+                <p class="text-box">Buy products that are reusable, energy-efficient, or made from sustainable materials. Small buying choices can support greener companies.</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <script>
+         function showSidebar(e) {
+                e.preventDefault();
+                document.querySelector("#side_nav ul").style.display = 'flex';
+            }
+            function hideSidebar(e) {
+                e.preventDefault();
+                document.querySelector("#side_nav ul").style.display = 'none';
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            console.log(entry.target);
+                            entry.target.classList.add("show");
+                        } else {
+                            entry.target.classList.remove("show");
+                        }
+                    });
+                }, {});
+
+
+                const titleElements = document.querySelectorAll("#title");
+                titleElements.forEach(el => observer.observe(el));
+
+                const subtitleElements = document.querySelectorAll(".sub-title");
+                subtitleElements.forEach(el => observer.observe(el));
+
+                const textboxElements = document.querySelectorAll(".text-box");
+                textboxElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
