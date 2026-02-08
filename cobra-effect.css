@@ -219,16 +219,17 @@ button a{
     }
     #text-box1{
         width: 100%;
+        padding: 0px 20px;
     }
-        #title-box {
-            flex-direction: column;
+    #title2-box {
+        flex-direction: column;
         }
+    #title2{
+        width: 100%;
+    }
     
-        #title {
-            width: 100%;
-        }
-    
-        #text-box1 {
-            width: 100%;
-        }
+    #text-box2{
+        width: 100%;
+        padding: 0px 20px;
+    }
 }
