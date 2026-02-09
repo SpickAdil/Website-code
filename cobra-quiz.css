@@ -1,0 +1,88 @@
+/*Fonts*/
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(63, 126, 68);
+}
+.app{
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.app h1{
+    color: rgba(63, 126, 68);
+    border-bottom: 1px solid rgba(63, 126, 68);
+    padding-bottom: 30px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+     font-style: normal;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 23px;
+    color: rgba(63, 126, 68);
+
+}
+.btn{
+    background-color: white;
+    width: 100%;
+    border: 1px solid rgba(63, 126, 68);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover:not([disabled]) {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background: white;
+    color: black;
+    width: 150px;
+    border: 2px black solid;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+#home-button{
+    background: white;
+    color: black;
+    width: 150px;
+    border: 2px black solid;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct{
+    background-color: rgba(63, 126, 68);
+    color: white;
+}
+.incorrect{
+    background-color: crimson;
+    border: 1px solid crimson;
+    color: white;
+}

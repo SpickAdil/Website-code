@@ -22,7 +22,7 @@ html {
 }
 html,
 body{
-    overflow-x: hidden;
+    overflow: visible;
     width: 100%;
 }
 hr.thick-line {
@@ -35,7 +35,7 @@ hr.thick-line {
     width: 95%;
 }
 .title-box{
-    height: 13vh;
+    min-height: 13vh;
 }
 .title{
     color: white;
@@ -47,7 +47,7 @@ hr.thick-line {
 }
 #main-box{
     display: flex;
-    height: 87vh;
+    min-height: 87vh;
 }
 .half-box{
     width: 50%;

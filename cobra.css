@@ -80,7 +80,7 @@ html, body {
 
     background-color: rgba(0, 128, 0, 0);
     backdrop-filter: blur(0px);
-    transition:bg-color-changeOne 0.3s ease;
+    transition: bg-color-changeOne 0.3s ease;
 
     z-index: 998;
 }
@@ -191,6 +191,9 @@ nav a:hover{
 .menu_button{
     display: none;
 }
+#side_nav ul.scrolled{
+    background-color: rgba(63, 126, 68);
+}
 #side_nav ul{
     position: fixed;
     top: 0;
@@ -206,6 +209,7 @@ nav a:hover{
     align-items: flex-start;
     justify-content: flex-start;
     overflow-x: hidden;
+    transition: bg-color-changeOne 0.3s ease;
 }
 #side_nav li{
     width: 100%;
@@ -299,28 +303,6 @@ nav a:hover{
 
 #ContinueButton:hover a {
     color: white;
-}
-#footer-line{
-    height: 2px;
-    width: 95%;
-    border: none;
-    background-color: black;
-}
-#main-footer{
-    border: 2px dashed;
-    width: 100%;
-    height: 60px;
-    display: flex;
-}
-#main-footer ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-#main-footer li{
-    height: 90px;
 }
 /*Media*/
 @media(max-width: 850px){

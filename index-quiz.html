@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz page</title>
+    <link rel="stylesheet" href="cobra-quiz.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <h1>Quiz On Climate Change</h1>
+        <div id="start-screen">
+            <br><br>
+            <button id="start-btn" class="btn">Start Quiz</button>
+            <br>
+            <button onclick="goHome()" class="btn">Home</button>
+        </div>
+        <div class="quiz" id="quiz" style="display:none;">
+            <h2 id="question">Question</h2>
+            <div id="answer-buttons">
+                <button class="btn">answer 1</button>
+                <button class="btn">answer 2</button>
+                <button class="btn">answer 3</button>
+                <button class="btn">answer 4</button>
+            </div>
+            <div id="home-button"></div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+
+<script>
+    const questions = [
+        {
+            question: " What is climate change?", answers: [
+                { text: "A. Earth getting colder", correct: false},
+                { text: "B. Long-term change in temperature and weather", correct: true},
+                { text: "C. Only rain changes", correct: false},
+                { text: "D. A type of pollution", correct: false}
+            ]
+        },
+        {
+           question: " Which gas mainly causes global warming?", answers: [
+                { text: "A. Oxygen", correct: false },
+                { text: "B. Nitrogen", correct: false },
+                { text: "C. Carbon Dioxide", correct: true },
+                { text: "D. Helium", correct: false }
+            ] 
+        },
+        {
+            question: " Which activity increases climate change the most?", answers: [
+                { text: "A. Planting trees", correct: false },
+                { text: "B. Burning fossil fuels", correct: true },
+                { text: "C. Recycling", correct: false },
+                { text: "D. Walking to school", correct: false }
+            ]
+        },
+        {
+            question: " What is deforestation?", answers: [
+                { text: "A. Growing forests", correct: false },
+                { text: "B. Cutting down many trees", correct: true },
+                { text: "C. Water pollution", correct: false },
+                { text: "D. Using solar energy", correct: false }
+            ]
+        },
+        {
+            question: " One major effect of climate change is:", answers: [
+                { text: "A. More snow everywhere", correct: false },
+                { text: "B. Rising sea levels", correct: true },
+                { text: "C. Less sunlight", correct: false },
+                { text: "D. Bigger mountains", correct: false }
+            ]
+        },
+        {
+            question: " Which is an example of extreme weather?", answers: [
+                { text: "A. Light breeze", correct: false },
+                { text: "B. Sunny day", correct: false },
+                { text: "C. Floods and hurricanes", correct: true },
+                { text: "D. Raining", correct: false }
+            ]
+        },
+        {
+            question: " How does climate change affect animals?", answers: [
+                { text: "A. They grow bigger", correct: false },
+                { text: "B. They lose habitats", correct: true },
+                { text: "C. They learn faster", correct: false },
+                { text: "D. They need less food", correct: false }
+            ]
+        },
+        {
+            question: " What is a good solution to climate change?", answers: [
+                { text: "A. Use more plastic", correct: false },
+                { text: "B. Waste electricity", correct:false },
+                { text: "C. Use renewable energy", correct: true },
+                { text: "D. Cut more trees", correct: false }
+            ]
+        },
+        {
+            question: " What can students do to help?", answers: [
+                { text: "A. Leave lights on", correct: false },
+                { text: "B. Use more cars", correct: false },
+                { text: "C. Save electricity and recycle", correct: true },
+                { text: "D. Waste water", correct: false }
+            ]
+        },
+        {
+            question: " What is SDG 13 about?", answers: [
+                { text: "A. Clean Water and sanitation", correct: false },
+                { text: "B. Climate Action", correct: true },
+                { text: "C. No poverty", correct: false },
+                { text: "D. Affordable and Clean Energy", correct: false }
+            ]
+        }
+    ];
+
+    const questionElement = document.getElementById("question");
+    const answerButtons = document.getElementById("answer-buttons");
+    const nextButton = document.getElementById("next-btn");
+    const startScreen = document.getElementById("start-screen");
+    const quizContainer = document.getElementById("quiz");
+    const startBtn = document.getElementById("start-btn");
+
+
+    let currenQuestionIndex = 0;
+    let score = 0;
+
+    function startQuiz(){
+        currenQuestionIndex = 0;
+        score = 0;
+        nextButton.innerHTML = "Next";
+        showQuestion();
+    }
+    function showQuestion(){
+        resetState();
+        let currentQuestion = questions[currenQuestionIndex];
+        let questionNo = currenQuestionIndex + 1;
+        questionElement.innerHTML = questionNo + "." + currentQuestion.question; 
+        
+        currentQuestion.answers.forEach(answer => {
+            const button = document.createElement("button");
+            button.innerHTML = answer.text;
+            button.classList.add("btn");
+            answerButtons.appendChild(button);
+            if(answer.correct){
+                button.dataset.correct = answer.correct;
+            }
+            button.addEventListener("click", selectAnswer)
+        })
+    }
+    function resetState(){
+        nextButton.style.display = "none";
+        while(answerButtons.firstChild){
+            answerButtons.removeChild(answerButtons.firstChild);
+        }
+    }
+
+    function selectAnswer(e){
+        const selectedBtn = e.target;
+        const isCorrect = selectedBtn.dataset.correct === "true";
+        if(isCorrect){
+            selectedBtn.classList.add("correct");
+            score++;
+        }else{
+            selectedBtn.classList.add("incorrect");
+        }
+        Array.from(answerButtons.children).forEach(button => {
+            if(button.dataset.correct === "true"){
+                button.classList.add("correct");
+            }
+            button.disabled = true;
+        });
+        nextButton.style.display = "block";
+    }
+
+    function showScore() {
+            resetState();
+            questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+
+            nextButton.innerHTML = "Play Again";
+            nextButton.style.display = "inline-block";
+
+            const homeBtn = document.createElement("button");
+            homeBtn.innerHTML = "Home";
+            homeBtn.classList.add("btn");
+            homeBtn.onclick = goHome;
+
+            answerButtons.appendChild(homeBtn);
+        }
+
+    function handleNextButton(){
+        currenQuestionIndex++;
+        if(currenQuestionIndex < questions.length){
+            showQuestion();
+        }else{
+            showScore();
+        }
+    }
+
+    nextButton.addEventListener("click", ()=> {
+        if(currenQuestionIndex < questions.length){
+            handleNextButton();
+        }else{
+            startQuiz()
+        }
+    })
+
+    function goHome() {
+            window.location.href = "index.html";
+        }
+
+    startBtn.addEventListener("click", () => {
+            startScreen.style.display = "none";
+            quizContainer.style.display = "block";
+            startQuiz();
+        });
+    </script>
+</body>
+</html>
