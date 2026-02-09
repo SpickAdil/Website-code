@@ -156,7 +156,6 @@ html, body {
     transform: translateY(20px);
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
-
 .cardtitle.show{
     opacity: 1;
     transform: translateY(0)
@@ -244,7 +243,6 @@ nav a:hover{
 
     padding: 0;
 }
-
 #learnMoreButton a {
     display: flex;
     align-items: center;
@@ -264,11 +262,9 @@ nav a:hover{
     background-color: black;
     border: 3px solid black;
 }
-
 #learnMoreButton:hover a {
     color: white;
 }
-
 #ContinueButton {
     margin-left: 50px;
     height: 60px;
@@ -280,7 +276,6 @@ nav a:hover{
     padding: 0;
     cursor: pointer;
 }
-
 #ContinueButton a {
     display: flex;
     align-items: center;
@@ -300,7 +295,6 @@ nav a:hover{
     background-color: black;
     border: 3px solid black;
 }
-
 #ContinueButton:hover a {
     color: white;
 }
