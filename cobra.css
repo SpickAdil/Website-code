@@ -68,7 +68,7 @@ html, body {
 }
 #title_13{
     color: white;
-    font-size: clamp(2.8rem, 12vw, 6rem);
+    font-size: clamp(3.8rem, 12vw, 5rem);
 }
 #main-nav{
     font-size: 16px;
@@ -88,7 +88,7 @@ html, body {
    background-color: rgba(63, 126, 68);
 }
 .main-title{
-    font-size: clamp(1.8rem, 10vw , 4rem);
+    font-size: clamp(2.8rem, 10vw , 4rem);
     color: #1B5E20;
 }
 #main-popup1{
